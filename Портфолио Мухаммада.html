@@ -1,0 +1,530 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Портфолио Мухаммада</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+  /* Layout: one column of frosted glass panels floating over soft orchard-green and apricot light, the Almaty apple-and-mountains world. */
+  :root {
+    --bg: #e9f1ea;
+    --fg: #13201a;
+    --muted: #46594e;
+    --glass: rgba(255, 255, 255, 0.55);
+    --glass-hi: rgba(255, 255, 255, 0.8);
+    --line: rgba(19, 32, 26, 0.12);
+    --accent: #217a40;
+    --accent-ink: #ffffff;
+    --warm: #d9772a;
+    --danger: #c4343a;
+    --blob-a: #86d596;
+    --blob-b: #f6b97d;
+    --blob-c: #9ed8d0;
+    --shadow: 0 12px 40px rgba(30, 70, 45, 0.14);
+    --font-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+    --font-body: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0a1310;
+      --fg: #e7f2ea;
+      --muted: #9db4a8;
+      --glass: rgba(255, 255, 255, 0.07);
+      --glass-hi: rgba(255, 255, 255, 0.16);
+      --line: rgba(255, 255, 255, 0.13);
+      --accent: #5fd388;
+      --accent-ink: #06210f;
+      --warm: #f2a05c;
+      --danger: #ff7b7f;
+      --blob-a: #1d7a44;
+      --blob-b: #9c4f1a;
+      --blob-c: #12676a;
+      --shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0a1310;
+    --fg: #e7f2ea;
+    --muted: #9db4a8;
+    --glass: rgba(255, 255, 255, 0.07);
+    --glass-hi: rgba(255, 255, 255, 0.16);
+    --line: rgba(255, 255, 255, 0.13);
+    --accent: #5fd388;
+    --accent-ink: #06210f;
+    --warm: #f2a05c;
+    --danger: #ff7b7f;
+    --blob-a: #1d7a44;
+    --blob-b: #9c4f1a;
+    --blob-c: #12676a;
+    --shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+    color-scheme: dark;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.55;
+    position: relative;
+    min-height: 100%;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 0 48px;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0 0 auto;
+    height: env(safe-area-inset-top, 0px);
+    z-index: 30;
+    background: var(--bg);
+  }
+
+  .bg { position: fixed; inset: 0; overflow: hidden; z-index: 0; pointer-events: none; }
+  .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.75; }
+  .blob.a { width: 46vmax; height: 46vmax; left: -14vmax; top: -12vmax; background: var(--blob-a); animation: drift 22s ease-in-out infinite alternate; }
+  .blob.b { width: 38vmax; height: 38vmax; right: -12vmax; top: 18vh; background: var(--blob-b); animation: drift 28s ease-in-out infinite alternate-reverse; }
+  .blob.c { width: 34vmax; height: 34vmax; left: 20vw; bottom: -16vmax; background: var(--blob-c); animation: drift 25s ease-in-out infinite alternate; }
+  @keyframes drift { from { transform: translate3d(0, 0, 0) scale(1); } to { transform: translate3d(4vmax, 3vmax, 0) scale(1.08); } }
+  @keyframes float { from { transform: translateY(0); } to { transform: translateY(-9px); } }
+  @media (prefers-reduced-motion: reduce) {
+    .blob, .float { animation: none !important; }
+    html { scroll-behavior: auto; }
+  }
+
+  .layer { position: relative; z-index: 1; }
+  .wrap { max-width: 1040px; margin: 0 auto; }
+
+  .glass {
+    background: var(--glass);
+    -webkit-backdrop-filter: blur(20px) saturate(1.5);
+    backdrop-filter: blur(20px) saturate(1.5);
+    border: 1px solid var(--line);
+    border-top-color: var(--glass-hi);
+    box-shadow: var(--shadow);
+  }
+  .panel { border-radius: 28px; }
+
+  .site-header { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); z-index: 20; padding-top: 12px; }
+  .bar { border-radius: 999px; padding: 8px 8px 8px 18px; display: flex; align-items: center; gap: 12px; justify-content: space-between; }
+  .brand { font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; letter-spacing: -0.01em; white-space: nowrap; }
+  .brand i { font-style: normal; color: var(--accent); }
+  .nav { display: flex; align-items: center; gap: 4px; min-width: 0; }
+  .nav-link { padding: 8px 14px; border-radius: 999px; font-weight: 500; font-size: 0.92rem; color: var(--muted); background: transparent; border: 0; cursor: pointer; }
+  .nav-link:hover { color: var(--fg); background: var(--glass); }
+  .icon-btn { width: 42px; height: 42px; border-radius: 50%; display: inline-grid; place-items: center; border: 1px solid var(--line); background: var(--glass); color: var(--fg); cursor: pointer; flex: none; }
+  .icon-btn:hover { background: var(--glass-hi); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .eyebrow { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); display: inline-flex; align-items: center; gap: 8px; }
+  .display { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.03em; line-height: 1.02; text-wrap: balance; }
+  .h1 { font-size: clamp(2.5rem, 7vw, 4.6rem); }
+  .h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+  .lead { color: var(--muted); font-size: 1.08rem; max-width: 52ch; }
+  .accent-text { color: var(--accent); }
+  .warm-text { color: var(--warm); }
+
+  .btn { display: inline-flex; align-items: center; gap: 10px; padding: 13px 22px; border-radius: 999px; font-weight: 600; font-size: 0.98rem; border: 1px solid transparent; cursor: pointer; transition: background .2s, border-color .2s; }
+  .btn-primary { background: var(--accent); color: var(--accent-ink); }
+  .btn-primary:hover { filter: brightness(1.08); }
+  .btn-ghost { background: var(--glass); color: var(--fg); border-color: var(--line); }
+  .btn-ghost:hover { background: var(--glass-hi); }
+
+  .avatar-ring { width: min(260px, 70vw); aspect-ratio: 1; border-radius: 50%; padding: 6px; background: conic-gradient(from 210deg, var(--accent), var(--warm), var(--blob-c), var(--accent)); position: relative; }
+  .avatar-core { width: 100%; height: 100%; border-radius: 50%; display: grid; place-items: center; background: var(--bg); position: relative; overflow: hidden; }
+  .avatar-core::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 30% 25%, color-mix(in srgb, var(--accent) 38%, transparent), transparent 60%), radial-gradient(circle at 75% 80%, color-mix(in srgb, var(--warm) 34%, transparent), transparent 55%); }
+  .avatar-letter { position: relative; font-family: var(--font-display); font-weight: 800; font-size: clamp(6rem, 20vw, 8.5rem); line-height: 1; letter-spacing: -0.05em; }
+  .badge { position: absolute; right: -6px; bottom: 14px; border-radius: 999px; padding: 7px 12px; font-family: var(--font-mono); font-size: 0.75rem; display: inline-flex; gap: 6px; align-items: center; }
+
+  .fact { border-radius: 22px; padding: 18px 20px; min-height: 104px; }
+  .fact-label { font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); display: inline-flex; gap: 8px; align-items: center; margin-bottom: 8px; }
+
+  .chip { padding: 9px 16px; border-radius: 999px; font-family: var(--font-mono); font-size: 0.85rem; border: 1px solid var(--line); background: var(--glass); color: var(--fg); cursor: pointer; display: inline-flex; gap: 8px; align-items: center; }
+  .chip:hover { background: var(--glass-hi); }
+  .chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+  .chip small { opacity: 0.7; font-size: 0.74rem; }
+
+  .card { border-radius: 24px; padding: 22px; min-width: 0; }
+  .tile { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, transparent); }
+  .tag { font-family: var(--font-mono); font-size: 0.74rem; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+
+  .stat { border-radius: 20px; padding: 12px 18px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .stat b { font-family: var(--font-display); font-size: 1.9rem; font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .stat span { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+
+  .arena { position: relative; height: 380px; border-radius: 28px; overflow: hidden; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+  .arena::after { content: ""; position: absolute; inset: auto 0 0 0; height: 56px; background: linear-gradient(to top, color-mix(in srgb, var(--danger) 18%, transparent), transparent); pointer-events: none; }
+  .drop { position: absolute; left: 0; top: 0; width: 48px; height: 48px; border-radius: 16px; display: grid; place-items: center; border: 1px solid var(--line); background: var(--glass-hi); cursor: pointer; padding: 0; will-change: transform; }
+  .drop-apple { color: var(--accent); }
+  .drop-star { color: var(--warm); }
+  .drop-bug { color: var(--danger); }
+  .pop { position: absolute; left: 0; top: 0; font-family: var(--font-mono); font-weight: 700; font-size: 1.1rem; pointer-events: none; }
+  .overlay { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 20px; background: color-mix(in srgb, var(--bg) 40%, transparent); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); z-index: 5; }
+  .meter { height: 6px; border-radius: 999px; background: var(--line); overflow: hidden; }
+  .meter > i { display: block; height: 100%; background: var(--accent); border-radius: inherit; transition: width .25s linear; }
+  .legend { display: inline-flex; gap: 8px; align-items: center; font-size: 0.92rem; color: var(--muted); }
+</style>
+
+<div id="bg" class="bg" aria-hidden="true"><div class="blob a"></div><div class="blob b"></div><div class="blob c"></div></div>
+<div id="root" class="layer"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/framer-motion@10.18.0/dist/framer-motion.js"></script>
+<script src="https://unpkg.com/lucide@0.294.0/dist/umd/lucide.min.js"></script>
+<script id="app">
+(function () {
+  var useState = React.useState, useEffect = React.useEffect, useRef = React.useRef;
+  var h = React.createElement;
+
+  /* framer-motion with a plain fallback if the library did not load */
+  var FM = window.Motion;
+  var cache = {};
+  function passthrough(tag) {
+    if (!cache[tag]) {
+      cache[tag] = function (props) {
+        var rest = {};
+        for (var k in props) {
+          if (['initial', 'animate', 'whileInView', 'whileHover', 'whileTap', 'viewport', 'transition', 'exit', 'layout', 'variants', 'mode'].indexOf(k) === -1) rest[k] = props[k];
+        }
+        return h(tag, rest);
+      };
+    }
+    return cache[tag];
+  }
+  var motion = FM && FM.motion ? FM.motion : new Proxy({}, { get: function (_, tag) { return passthrough(tag); } });
+  var AnimatePresence = FM && FM.AnimatePresence ? FM.AnimatePresence : function (p) { return p.children; };
+
+  /* Lucide icons rendered through React from the lucide icon data */
+  function Icon(props) {
+    var L = window.lucide;
+    var node = L && L.icons && L.icons[props.name];
+    var kids = (node || []).map(function (c, i) {
+      var attrs = Object.assign({ key: i }, c[1] || {});
+      return h(c[0], attrs);
+    });
+    var size = props.size || 20;
+    return h('svg', {
+      xmlns: 'http://www.w3.org/2000/svg', width: size, height: size, viewBox: '0 0 24 24',
+      fill: 'none', stroke: 'currentColor', strokeWidth: props.strokeWidth || 2,
+      strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': 'true', className: props.className || ''
+    }, kids);
+  }
+
+  /* storage helpers: every access guarded */
+  var KEY_BEST = 'muhammad-clicker-best', KEY_THEME = 'muhammad-theme';
+  function read(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function write(k, v) { try { localStorage.setItem(k, String(v)); } catch (e) {} }
+
+  var FACTS = [
+    'Название Алматы обычно связывают с казахским словом «алма», что значит «яблоко».',
+    'Дикая яблоня Malus sieversii растёт в горах Тянь-Шаня рядом с Алматы и считается предком большинства культурных яблонь.',
+    'Казахстан занимает первое место в мире по площади среди стран без выхода к океану.',
+    'Слово «баг» прославил случай 1947 года: в реле компьютера Harvard Mark II нашли настоящего мотылька.',
+    'Python назван в честь британского шоу «Монти Пайтон», а не в честь змеи.',
+    'Первую версию JavaScript Брендан Эйх написал в 1995 году примерно за десять дней.',
+    'Каток Медеу над Алматы расположен на высоте около 1700 метров, и лёд там считается одним из самых быстрых в мире.',
+    'Первый в истории сайт запустили в ЦЕРНе в 1991 году.'
+  ];
+
+  var INTERESTS = [
+    { id: 1, icon: 'Cpu', title: 'Искусственный интеллект', text: 'Языковые модели, агенты и то, как встроить их в настоящие продукты.', tags: ['tech'] },
+    { id: 2, icon: 'Bot', title: 'Telegram-боты', text: 'Небольшие боты, которые отвечают, напоминают и коротко рассказывают об авторе.', tags: ['code'] },
+    { id: 3, icon: 'Code2', title: 'React и интерфейсы', text: 'Компоненты, анимации и аккуратная вёрстка на Tailwind.', tags: ['code', 'tech'] },
+    { id: 4, icon: 'Smartphone', title: 'Гаджеты', text: 'Новые устройства, настройка рабочего места и всё, что экономит время.', tags: ['tech'] },
+    { id: 5, icon: 'Terminal', title: 'Терминал и автоматизация', text: 'Скрипты, которые берут на себя рутину, пока я занимаюсь другим.', tags: ['code', 'tech'] },
+    { id: 6, icon: 'Mountain', title: 'Горы вокруг города', text: 'Выходные на тропах Заилийского Алатау: Кок-Тобе, Медеу, Большое Алматинское озеро.', tags: ['hobby'] },
+    { id: 7, icon: 'Camera', title: 'Фотография', text: 'Городские кадры и закаты над горами.', tags: ['hobby'] },
+    { id: 8, icon: 'Gamepad2', title: 'Мини-игры', text: 'Небольшие игры на React и canvas, как та, что ниже на странице.', tags: ['code', 'hobby'] },
+    { id: 9, icon: 'BookOpen', title: 'Книги и подкасты', text: 'Про технологии, историю и устройство вещей.', tags: ['hobby'] }
+  ];
+
+  var FILTERS = [
+    { id: 'all', label: 'Все' },
+    { id: 'tech', label: '#tech' },
+    { id: 'code', label: '#code' },
+    { id: 'hobby', label: '#hobby' }
+  ];
+
+  /* ---------- theme ---------- */
+  function useTheme() {
+    var stored = read(KEY_THEME);
+    var s0 = useState(stored === 'dark' || stored === 'light' ? stored : null);
+    var mode = s0[0], setMode = s0[1];
+    var s1 = useState(function () { return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches); });
+    var sys = s1[0], setSys = s1[1];
+    useEffect(function () {
+      if (!window.matchMedia) return;
+      var mq = window.matchMedia('(prefers-color-scheme: dark)');
+      var f = function (e) { setSys(e.matches); };
+      if (mq.addEventListener) mq.addEventListener('change', f);
+      return function () { if (mq.removeEventListener) mq.removeEventListener('change', f); };
+    }, []);
+    useEffect(function () {
+      if (mode) document.documentElement.setAttribute('data-theme', mode);
+    }, [mode]);
+    var dark = mode ? mode === 'dark' : sys;
+    function toggle() {
+      var n = dark ? 'light' : 'dark';
+      setMode(n);
+      write(KEY_THEME, n);
+    }
+    return { dark: dark, toggle: toggle };
+  }
+
+  function go(id) {
+    var el = document.getElementById(id);
+    if (el && el.scrollIntoView) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  /* ---------- header ---------- */
+  function Header(props) {
+    return h('header', { className: 'site-header wrap' },
+      h(motion.div, { className: 'glass bar', initial: { opacity: 0, y: -16 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5 } },
+        h('div', { className: 'brand' }, 'Мухаммад', h('i', null, '.')),
+        h('nav', { className: 'nav', 'aria-label': 'Разделы' },
+          h('button', { className: 'nav-link', type: 'button', onClick: function () { go('interests'); } }, 'Интересы'),
+          h('button', { className: 'nav-link', type: 'button', onClick: function () { go('game'); } }, 'Игра'),
+          h(motion.button, {
+            className: 'icon-btn', type: 'button', onClick: props.toggle, whileTap: { scale: 0.9 },
+            'aria-label': props.dark ? 'Включить светлую тему' : 'Включить тёмную тему', title: props.dark ? 'Светлая тема' : 'Тёмная тема'
+          }, h(Icon, { name: props.dark ? 'Sun' : 'Moon', size: 20 }))
+        )
+      )
+    );
+  }
+
+  /* ---------- hero ---------- */
+  function Hero() {
+    var s = useState(0), fi = s[0], setFi = s[1];
+    function roll() {
+      setFi(function (p) {
+        var n = p;
+        while (n === p) n = Math.floor(Math.random() * FACTS.length);
+        return n;
+      });
+    }
+    return h('section', { className: 'wrap grid items-center gap-10 md:grid-cols-[1.35fr_1fr]', style: { paddingTop: '56px', paddingBottom: '72px' } },
+      h('div', { className: 'flex flex-col gap-6 min-w-0' },
+        h(motion.span, { className: 'eyebrow', initial: { opacity: 0, y: 14 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5, delay: 0.1 } },
+          h(Icon, { name: 'MapPin', size: 15 }), 'Алматы, Казахстан'),
+        h(motion.h1, { className: 'display h1', initial: { opacity: 0, y: 24 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.65, delay: 0.18 } },
+          'Привет, я ', h('span', { className: 'accent-text' }, 'Мухаммад'), '.'),
+        h(motion.p, { className: 'lead', initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.6, delay: 0.3 } },
+          'Делаю интерфейсы, Telegram-боты и небольшие игры. Здесь мои интересы и мини-игра на 30 секунд, в которой можно побить рекорд.'),
+        h(motion.div, { className: 'flex flex-wrap gap-3', initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.6, delay: 0.4 } },
+          h(motion.button, { className: 'btn btn-primary', type: 'button', onClick: roll, whileTap: { scale: 0.96 }, whileHover: { y: -2 } },
+            h(Icon, { name: 'Dices', size: 20 }), 'Случайный факт'),
+          h('button', { className: 'btn btn-ghost', type: 'button', onClick: function () { go('game'); } },
+            h(Icon, { name: 'Gamepad2', size: 20 }), 'Сыграть')
+        ),
+        h(motion.div, { className: 'glass fact', initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.6, delay: 0.5 }, 'aria-live': 'polite' },
+          h('div', { className: 'fact-label' }, h(Icon, { name: 'Sparkles', size: 15 }), 'Факт'),
+          h(AnimatePresence, { mode: 'wait' },
+            h(motion.p, { key: fi, style: { margin: 0 }, initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0, y: -10 }, transition: { duration: 0.25 } }, FACTS[fi])
+          )
+        )
+      ),
+      h(motion.div, { className: 'flex justify-center', initial: { opacity: 0, scale: 0.9 }, animate: { opacity: 1, scale: 1 }, transition: { duration: 0.8, delay: 0.25, ease: [0.2, 0.7, 0.2, 1] } },
+        h('div', { className: 'float', style: { animation: 'float 5s ease-in-out infinite alternate' } },
+          h('div', { className: 'avatar-ring' },
+            h('div', { className: 'avatar-core' }, h('span', { className: 'avatar-letter' }, 'М')),
+            h('span', { className: 'glass badge' }, h(Icon, { name: 'MapPin', size: 13 }), 'UTC+5')
+          )
+        )
+      )
+    );
+  }
+
+  /* ---------- interests ---------- */
+  function Interests() {
+    var s = useState('all'), filter = s[0], setFilter = s[1];
+    var list = INTERESTS.filter(function (i) { return filter === 'all' || i.tags.indexOf(filter) !== -1; });
+    function count(id) { return INTERESTS.filter(function (i) { return id === 'all' || i.tags.indexOf(id) !== -1; }).length; }
+    return h('section', { id: 'interests', className: 'wrap', style: { paddingBottom: '88px', scrollMarginTop: '88px' } },
+      h(motion.div, { initial: { opacity: 0.3, y: 22 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true, amount: 0.2 }, transition: { duration: 0.6 }, className: 'flex flex-col gap-5 mb-8' },
+        h('span', { className: 'eyebrow' }, h(Icon, { name: 'Sparkles', size: 15 }), 'Интересы'),
+        h('h2', { className: 'display h2' }, 'Чем я занимаюсь и что люблю'),
+        h('div', { className: 'flex flex-wrap gap-2', role: 'group', 'aria-label': 'Фильтр по тегам' },
+          FILTERS.map(function (f) {
+            return h('button', { key: f.id, type: 'button', className: 'chip', 'aria-pressed': filter === f.id ? 'true' : 'false', onClick: function () { setFilter(f.id); } },
+              f.label, h('small', null, count(f.id)));
+          })
+        )
+      ),
+      h(motion.div, { layout: true, className: 'grid gap-4 sm:grid-cols-2 lg:grid-cols-3' },
+        h(AnimatePresence, { mode: 'popLayout' },
+          list.map(function (it, idx) {
+            return h(motion.article, {
+              key: it.id, layout: true, className: 'glass card flex flex-col gap-4',
+              initial: { opacity: 0, scale: 0.92, y: 16 }, animate: { opacity: 1, scale: 1, y: 0 }, exit: { opacity: 0, scale: 0.92 },
+              transition: { duration: 0.35, delay: Math.min(idx * 0.04, 0.3) }, whileHover: { y: -4 }
+            },
+              h('div', { className: 'tile' }, h(Icon, { name: it.icon, size: 24 })),
+              h('div', { className: 'flex flex-col gap-2' },
+                h('h3', { className: 'display', style: { fontSize: '1.25rem', letterSpacing: '-0.02em', margin: 0 } }, it.title),
+                h('p', { style: { margin: 0, color: 'var(--muted)', fontSize: '0.96rem' } }, it.text)
+              ),
+              h('div', { className: 'flex flex-wrap gap-2 mt-auto' }, it.tags.map(function (t) { return h('span', { key: t, className: 'tag' }, '#' + t); }))
+            );
+          })
+        )
+      )
+    );
+  }
+
+  /* ---------- game ---------- */
+  var ICONS = { apple: 'Apple', star: 'Star', bug: 'Bug' };
+  var POINTS = { apple: 1, star: 3, bug: -2 };
+  var LABELS = { apple: 'яблоко', star: 'звезда', bug: 'баг' };
+  var DURATION = 30;
+
+  function Game() {
+    var sPhase = useState('idle'), phase = sPhase[0], setPhase = sPhase[1];
+    var sScore = useState(0), score = sScore[0], setScore = sScore[1];
+    var sTime = useState(DURATION), time = sTime[0], setTime = sTime[1];
+    var sBest = useState(function () { var v = parseInt(read(KEY_BEST), 10); return isNaN(v) ? 0 : v; }), best = sBest[0], setBest = sBest[1];
+    var sFresh = useState(false), fresh = sFresh[0], setFresh = sFresh[1];
+    var sScene = useState({ items: [], pops: [] }), scene = sScene[0], setScene = sScene[1];
+    var area = useRef(null);
+    var st = useRef({ items: [], pops: [], score: 0, id: 0, run: false, raf: 0, best: best });
+
+    useEffect(function () {
+      return function () { st.current.run = false; cancelAnimationFrame(st.current.raf); };
+    }, []);
+
+    function finish() {
+      var s = st.current;
+      s.run = false;
+      cancelAnimationFrame(s.raf);
+      setTime(0);
+      setScene({ items: [], pops: [] });
+      if (s.score > s.best) {
+        s.best = s.score;
+        write(KEY_BEST, s.score);
+        setBest(s.score);
+        setFresh(true);
+      }
+      setPhase('over');
+    }
+
+    function start() {
+      var s = st.current;
+      cancelAnimationFrame(s.raf);
+      s.items = []; s.pops = []; s.score = 0; s.next = 200; s.run = true;
+      s.t0 = performance.now(); s.last = s.t0;
+      setScore(0); setTime(DURATION); setFresh(false); setScene({ items: [], pops: [] }); setPhase('running');
+      function tick(now) {
+        if (!s.run) return;
+        var dt = Math.min(now - s.last, 50);
+        s.last = now;
+        var elapsed = (now - s.t0) / 1000;
+        var left = Math.max(0, DURATION - elapsed);
+        var box = area.current;
+        var w = box ? box.clientWidth : 320, hgt = box ? box.clientHeight : 380;
+        s.next -= dt;
+        if (s.next <= 0) {
+          var r = Math.random();
+          var kind = r < 0.14 ? 'star' : r < 0.32 ? 'bug' : 'apple';
+          var base = kind === 'star' ? 230 : kind === 'bug' ? 150 : 115;
+          s.items.push({ id: s.id++, kind: kind, x: Math.random() * Math.max(1, w - 48), y: -52, v: base + elapsed * 3 + Math.random() * 60 });
+          s.next = 680 - Math.min(380, elapsed * 13) + Math.random() * 200;
+        }
+        s.items = s.items.filter(function (it) { it.y += it.v * dt / 1000; return !it.dead && it.y < hgt + 10; });
+        s.pops = s.pops.filter(function (p) { p.life -= dt; p.y -= dt * 0.04; return p.life > 0; });
+        setScene({ items: s.items.slice(), pops: s.pops.slice() });
+        setTime(Math.ceil(left));
+        if (left <= 0) { finish(); return; }
+        s.raf = requestAnimationFrame(tick);
+      }
+      s.raf = requestAnimationFrame(tick);
+    }
+
+    function hit(id) {
+      var s = st.current;
+      if (!s.run) return;
+      var it = null;
+      for (var i = 0; i < s.items.length; i++) { if (s.items[i].id === id) { it = s.items[i]; break; } }
+      if (!it || it.dead) return;
+      it.dead = true;
+      var pts = POINTS[it.kind];
+      s.score = Math.max(0, s.score + pts);
+      setScore(s.score);
+      s.pops.push({ id: 'p' + (s.id++), x: it.x, y: it.y, txt: (pts > 0 ? '+' : '−') + Math.abs(pts), color: pts > 0 ? 'var(--accent)' : 'var(--danger)', life: 700 });
+      setScene({ items: s.items.filter(function (x) { return !x.dead; }), pops: s.pops.slice() });
+    }
+
+    var pct = Math.max(0, Math.min(100, (time / DURATION) * 100));
+
+    return h('section', { id: 'game', className: 'wrap', style: { paddingBottom: '40px', scrollMarginTop: '88px' } },
+      h(motion.div, { initial: { opacity: 0.3, y: 22 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true, amount: 0.1 }, transition: { duration: 0.6 }, className: 'flex flex-col gap-6' },
+        h('div', { className: 'flex flex-col gap-4' },
+          h('span', { className: 'eyebrow' }, h(Icon, { name: 'Gamepad2', size: 15 }), 'Мини-игра'),
+          h('h2', { className: 'display h2' }, 'Собери урожай за 30 секунд'),
+          h('div', { className: 'flex flex-wrap gap-x-6 gap-y-2' },
+            h('span', { className: 'legend' }, h('span', { className: 'accent-text' }, h(Icon, { name: 'Apple', size: 18 })), 'Яблоко: +1'),
+            h('span', { className: 'legend' }, h('span', { className: 'warm-text' }, h(Icon, { name: 'Star', size: 18 })), 'Звезда: +3'),
+            h('span', { className: 'legend' }, h('span', { style: { color: 'var(--danger)' } }, h(Icon, { name: 'Bug', size: 18 })), 'Баг: −2')
+          )
+        ),
+        h('div', { className: 'grid grid-cols-3 gap-3' },
+          h('div', { className: 'glass stat' }, h('span', null, h(Icon, { name: 'Zap', size: 13 }), 'Очки'), h('b', null, score)),
+          h('div', { className: 'glass stat' }, h('span', null, h(Icon, { name: 'Timer', size: 13 }), 'Время'), h('b', null, time + ' с')),
+          h('div', { className: 'glass stat' }, h('span', null, h(Icon, { name: 'Trophy', size: 13 }), 'Рекорд'), h('b', null, best))
+        ),
+        h('div', { className: 'meter', role: 'progressbar', 'aria-valuemin': 0, 'aria-valuemax': DURATION, 'aria-valuenow': time, 'aria-label': 'Оставшееся время' }, h('i', { style: { width: pct + '%' } })),
+        h('div', { ref: area, className: 'glass arena' },
+          scene.items.map(function (it) {
+            return h('button', {
+              key: it.id, type: 'button', className: 'drop drop-' + it.kind, 'aria-label': LABELS[it.kind],
+              style: { transform: 'translate3d(' + it.x + 'px,' + it.y + 'px,0)' },
+              onPointerDown: function (e) { e.preventDefault(); hit(it.id); }
+            }, h(Icon, { name: ICONS[it.kind], size: 26 }));
+          }),
+          scene.pops.map(function (p) {
+            return h('div', { key: p.id, className: 'pop', style: { transform: 'translate3d(' + (p.x + 12) + 'px,' + p.y + 'px,0)', opacity: Math.max(0, p.life / 700), color: p.color } }, p.txt);
+          }),
+          phase !== 'running' && h(motion.div, { className: 'overlay', initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 0.3 } },
+            h('div', { className: 'flex flex-col items-center gap-4' },
+              phase === 'over'
+                ? h(React.Fragment, null,
+                    h('div', { className: 'display', style: { fontSize: 'clamp(2rem,6vw,3rem)' } }, 'Время вышло'),
+                    h('p', { style: { margin: 0, color: 'var(--muted)' } }, 'Ваш счёт: ', h('b', { style: { color: 'var(--fg)' } }, score)),
+                    fresh && h('div', { className: 'tag', style: { color: 'var(--accent)', borderColor: 'var(--accent)' } }, 'Новый рекорд'))
+                : h(React.Fragment, null,
+                    h('div', { className: 'display', style: { fontSize: 'clamp(1.8rem,5vw,2.6rem)' } }, 'Лови то, что падает'),
+                    h('p', { style: { margin: 0, color: 'var(--muted)', maxWidth: '34ch' } }, 'Нажимай на яблоки и звёзды. Багов лучше избегать. Рекорд хранится в этом браузере.')),
+              h(motion.button, { className: 'btn btn-primary', type: 'button', onClick: start, whileTap: { scale: 0.96 } },
+                h(Icon, { name: phase === 'over' ? 'RotateCcw' : 'Play', size: 18 }), phase === 'over' ? 'Сыграть ещё' : 'Начать')
+            )
+          )
+        )
+      )
+    );
+  }
+
+  function Footer() {
+    return h('footer', { className: 'wrap', style: { paddingTop: '48px', color: 'var(--muted)', fontSize: '0.9rem', display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' } },
+      h(Icon, { name: 'MapPin', size: 15 }), 'Сделано в Алматы. React, Tailwind CSS, Lucide и framer-motion.');
+  }
+
+  function App() {
+    var t = useTheme();
+    return h(React.Fragment, null,
+      h(Header, { dark: t.dark, toggle: t.toggle }),
+      h('main', null, h(Hero), h(Interests), h(Game)),
+      h(Footer)
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(h(App));
+})();
+</script>
+
+</body></html>
